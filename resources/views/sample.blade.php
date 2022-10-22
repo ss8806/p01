@@ -18,7 +18,7 @@
         <input type="hidden" name="name" value="{{$sample->name}}" />
         <input type="hidden" name="flg" value="0" />
         @if($sample->del_flg === "1")
-        <input type="checkbox" name="flg" checked="checked" value="1" />チェックされてます。
+        <input type="checkbox" name="flg" checked="checked" value="1" />チェックされてます
         @else
         <input type="checkbox" name="flg" value="0"/>
         @endif
