@@ -75,9 +75,9 @@ class SampleController extends Controller
     {
         $del_request = $request->all();
         //$del_request = $request->input('del_flg');
-        //dd($del_request);
+        // dd($del_request);
 
-        $sample = Sample::find(1);
+        $sample = Sample::find($request->input('id'));
         $sample->name = $request->input('name');
         $sample->del_flg = $request->input('flg');
         $sample->save();
